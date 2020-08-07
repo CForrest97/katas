@@ -1,5 +1,5 @@
-import StatementPrinter from "../../../../../src/bank/domain/services/StatementPrinter";
-import Printer from "../../../../../src/bank/adapters/Printer";
+import StatementPrinter from "../../../../src/domain/services/StatementPrinter";
+import Printer from "../../../../src/adapters/Printer";
 
 describe("StatementPrinter", () => {
   it("should print an empty statement", () => {

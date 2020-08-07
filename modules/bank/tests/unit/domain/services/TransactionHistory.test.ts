@@ -1,6 +1,6 @@
-import TransactionHistory from "../../../../../src/bank/domain/services/TransactionHistory";
-import Clock from "../../../../../src/bank/adapters/Clock";
-import Store from "../../../../../src/bank/domain/repositories/TransactionStore";
+import TransactionHistory from "../../../../src/domain/services/TransactionHistory";
+import Clock from "../../../../src/adapters/Clock";
+import Store from "../../../../src/domain/repositories/TransactionStore";
 
 const mockAddTransaction = jest.fn();
 const mockPullTransaction = jest.fn();

@@ -1,4 +1,4 @@
-import LocalTransactionStore from "../../../../src/bank/adapters/LocalTransactionStore";
+import LocalTransactionStore from "../../../src/adapters/LocalTransactionStore";
 
 describe("LocalTransactionStore", () => {
   it("should store and pull all transaction", () => {

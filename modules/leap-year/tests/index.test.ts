@@ -1,4 +1,4 @@
-import { isLeapYear } from "../../src/leapYear";
+import { isLeapYear } from "../src";
 
 describe("calculator", () => {
   it.each([

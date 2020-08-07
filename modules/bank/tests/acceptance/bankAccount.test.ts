@@ -1,10 +1,10 @@
-import Account from "../../../src/bank/domain/services/Account";
-import TransactionHistory from "../../../src/bank/domain/services/TransactionHistory";
-import Clock from "../../../src/bank/adapters/Clock";
-import Store from "../../../src/bank/domain/repositories/TransactionStore";
-import LocalTransactionStore from "../../../src/bank/adapters/LocalTransactionStore";
-import StatementPrinter from "../../../src/bank/domain/services/StatementPrinter";
-import Printer from "../../../src/bank/adapters/Printer";
+import Account from "../../src/domain/services/Account";
+import TransactionHistory from "../../src/domain/services/TransactionHistory";
+import Clock from "../../src/adapters/Clock";
+import Store from "../../src/domain/repositories/TransactionStore";
+import LocalTransactionStore from "../../src/adapters/LocalTransactionStore";
+import StatementPrinter from "../../src/domain/services/StatementPrinter";
+import Printer from "../../src/adapters/Printer";
 
 describe("bank account", () => {
   it("should handle deposits, withdrawals and printing statements", () => {
