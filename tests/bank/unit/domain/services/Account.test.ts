@@ -28,7 +28,7 @@ describe("Account", () => {
 
   beforeEach(() => {
     const clock: Clock = { getTodayAsString: jest.fn() };
-    const store: Store = { addData: jest.fn(), pullData: jest.fn() };
+    const store: Store = { addTransaction: jest.fn(), pullTransactions: jest.fn() };
     const printer: Printer = { printLine: jest.fn() };
 
     const transactionHistory = new TransactionHistory(clock, store);

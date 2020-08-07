@@ -4,11 +4,11 @@ import Transaction from "../domain/models/Transaction";
 export default class LocalTransactionStore implements Store {
   private transactions: Transaction[] = [];
 
-  addData(transaction: Transaction): void {
+  addTransaction(transaction: Transaction): void {
     this.transactions.push(transaction);
   }
 
-  pullData(): Transaction[] {
+  pullTransactions(): Transaction[] {
     return this.transactions;
   }
 }
