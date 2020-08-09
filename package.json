@@ -10,7 +10,8 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll",
-    "test:full": "yarn lint && yarn test:coverage"
+    "test:full": "yarn lint && yarn test:coverage",
+    "init:module": "./init_module.sh"
   },
   "license": "MIT",
   "devDependencies": {

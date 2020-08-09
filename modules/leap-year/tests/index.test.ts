@@ -1,6 +1,6 @@
 import { isLeapYear } from "../src";
 
-describe("calculator", () => {
+describe("leap-year", () => {
   it.each([
     [2001, false],
     [2004, true],
