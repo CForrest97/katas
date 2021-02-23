@@ -8,10 +8,10 @@ const getNumberOfCombinationsForCoins = (amount: number, remainingCoins: number[
   const otherCoins = [...remainingCoins];
   const largestCoin = otherCoins.pop() as number;
 
-  const degreesOfFreedomForLargestCoin = Math.floor(amount / largestCoin);
+  const degreesOfFreedomForLargestCoin = Math.floor(amount / largestCoin) + 1;
 
   return Array
-    .from({ length: degreesOfFreedomForLargestCoin + 1 })
+    .from({ length: degreesOfFreedomForLargestCoin })
     .map((_, i) => getNumberOfCombinationsForCoins(amount - (i * largestCoin), otherCoins))
     .reduce((a, b) => a + b);
 };
